@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    min-height: 800px;
+}
+
+#card {
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    
+    
+}
+
+#card:hover {
+    transform: scale(1.01);
+    box-shadow: 10px 20px 15px #E00260;
+    transition: 0.5s;
+}
+
+p {
+    color: rgb(251, 239, 239);
+    text-align: center;
+    line-height: 0.5;
+}
+
+#isim {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#unvan {
+    font-size: 35px;
+}
+
+i {
+    display: inline-block;
+    color: rgb(251, 239, 239);
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+#mail:hover {
+    color: #11ABFF;
+    transition: 0.8s;
+    transform-origin: center;
+
+}
+
+#github:hover {
+    color: #11ABFF;
+    transition: 0.8s;
+    transform-origin: center;
+
+}
+
+#linkedin:hover {
+    color: #11ABFF;
+    transition: 0.8s;
+    transform-origin: center;
+
+}
+
+#twitter:hover {
+    color: #11ABFF;
+    transition: 0.8s;
+    transform-origin: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+
