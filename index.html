@@ -20,25 +20,41 @@
         <source src="videoters.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
-    
+
     <script>
         const video = document.getElementById('myVideo');
-    
+
         video.addEventListener('ended', () => {
             video.src = 'videoters.mp4';
             video.play();
         });
     </script>
-    <div id="card">
-        <p id="isim">Faruk Yahya Şahin</p>
-        <p id="unvan">Bilgisayar Mühendisliği Öğrencisi</p>
-        <br><br>
-        <a href="mailto:farukyahya66@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="mail" ></i></a>
-        <a href="https://www.linkedin.com/in/farukyahyasahin" target="_blank"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-        <a href="https://github.com/farukyahyasahin" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
-        <a href="https://x.com/farukyahya66" target="_blank"><i class="fa-brands fa-square-x-twitter" id="twitter"></i></a>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p id="isim" style="line-height: 65px;">Faruk Yahya Şahin</p>
+                <p id="unvan">Bilgisayar Mühendisliği Öğrencisi</p>
+            </div>
+            <div class="flip-card-back">
+                <br>
+                <p style="font-size: 20px;line-height: 30px;">Kocaeli Üniversitesi 4. Sınıf Öğrencisi</p>
+                <p style="font-size: 25px;">Gereksinimler</p>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA (Başlangıç Seviye)</li>
+                <li>C (Başlangıç Seviye)</li>
+                <li>SQL (Başlangıç Seviye)</li>
+            </div>
+        </div>
     </div>
-
+    <div class="footer">
+        <a href="mailto:farukyahya66@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="mail"></i></a>
+        <a href="https://www.linkedin.com/in/farukyahyasahin" target="_blank"><i class="fa-brands fa-linkedin"
+                id="linkedin"></i></a>
+        <a href="https://github.com/farukyahyasahin" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
+        <a href="https://x.com/farukyahya66" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                id="twitter"></i></a>
+    </div>
 </body>
 
 </html>
