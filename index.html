@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faruk Yahya Şahin / Bilgisayar Mühendisi">
+    <meta name="keywords" content="faruk,yahya,şahin,bilgisayar,mühendis,web sayfası,teknoloji">
+    <title>Faruk Yahya Şahin</title>
+    <link rel="shortcut icon" href="ikonyeni.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <video id="myVideo" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        <source src="videoters.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <script>
+        const video = document.getElementById('myVideo');
+
+        video.addEventListener('ended', () => {
+            video.src = 'videoters.mp4';
+            video.play();
+        });
+    </script>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p id="isim">Faruk Yahya Şahin</p>
+                <p id="unvan">Bilgisayar Mühendisi</p>
+            </div>
+            <div class="flip-card-back">
+                <br>
+                <p id="okul">Kocaeli Üniversitesi 4. Sınıf Öğrencisi</p>
+                <p id="beceri">Beceriler</p>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA (Başlangıç Seviye)</li>
+                <li>C (Başlangıç Seviye)</li>
+                <li>SQL (Başlangıç Seviye)</li>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="mailto:farukyahya66@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="mail"></i></a>
+        <a href="https://www.linkedin.com/in/farukyahyasahin" target="_blank"><i class="fa-brands fa-linkedin"
+                id="linkedin"></i></a>
+        <a href="https://github.com/farukyahyasahin" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
+        <a href="https://x.com/farukyahya66" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                id="twitter"></i></a>
+    </div>
+</body>
+
+</html>
