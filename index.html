@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İnformation Card</title>
+    <title>Faruk Yahya Şahin - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <video id="myVideo" autoplay muted loop>
+    <video id="myVideo" autoplay muted loop playsinline>
         <source src="video.mp4" type="video/mp4">
         <source src="videoters.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
@@ -29,31 +29,44 @@
             video.play();
         });
     </script>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <p id="isim" style="line-height: 65px;">Faruk Yahya Şahin</p>
-                <p id="unvan">Bilgisayar Mühendisi</p>
-            </div>
-            <div class="flip-card-back">
-                <br>
-                <p style="font-size: 20px;line-height: 30px;"></p>
-                <p style="font-size: 25px;">Gereksinimler</p>
-                <li>React</li>
-                <li>React Native</li>
-                <li>JAVA</li>
-                <li>C</li>
-                <li>SQL</li>
+    
+    <div class="glass-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="profile-content">
+                        <h1 id="isim">Faruk Yahya Şahin</h1>
+                        <h2 id="unvan">Bilgisayar Mühendisi</h2>
+                        <div class="badge">
+                            <i class="fa-solid fa-graduation-cap"></i> Kocaeli Üniversitesi 2025 Mezunu
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <h3 class="skills-title">Yetenekler & Teknolojiler</h3>
+                    <div class="skills-grid">
+                        <span class="skill-chip"><i class="fa-brands fa-react"></i> React & Native</span>
+                        <span class="skill-chip"><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+                        <span class="skill-chip"><i class="fa-brands fa-node-js"></i> Next.js</span>
+                        <span class="skill-chip"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-chip"><i class="fa-solid fa-c"></i> C / C++</span>
+                        <span class="skill-chip"><i class="fa-solid fa-database"></i> SQL</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <a href="mailto:farukyahya66@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="mail"></i></a>
-        <a href="https://www.linkedin.com/in/farukyahyasahin" target="_blank"><i class="fa-brands fa-linkedin"
-                id="linkedin"></i></a>
-        <a href="https://github.com/farukyahyasahin" target="_blank"><i class="fa-brands fa-github" id="github"></i></a>
-        <a href="https://x.com/farukyahya66" target="_blank"><i class="fa-brands fa-square-x-twitter"
-                id="twitter"></i></a>
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="mailto:farukyahya66@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/farukyahyasahin" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/farukyahyasahin" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/farukyahya66" target="_blank" title="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html" class="privacy-link">Gizlilik Politikası</a>
+            </div>
+        </div>
     </div>
 </body>
 
